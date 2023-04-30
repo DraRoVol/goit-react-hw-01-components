@@ -4,12 +4,11 @@ import cssModule from './FriendListItem.module.css';
 const FriendListItem = ({ avatar, userName, isOnline }) => {
   return (
     <li className={cssModule.item}>
-      <span className={cssModule.status} style={{ backgroundColor: isOnline ? 'green' : 'red' }}></span>
+      <span className={cssModule.status} style={{ backgroundColor: isOnline ? 'rgb(61 207 61)' : 'rgb(231 52 130)' }}></span>
       <img
         className={cssModule.avatar}
         src={avatar}
         alt="User avatar"
-        width="35"
       />
       <p className={cssModule.name}>{userName}</p>
     </li>
